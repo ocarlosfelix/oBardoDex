@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css " />
+  </head>
+
+  <body>
+    <div class="calculadoracontainer">
+      <form>
+        <div class="header">
+          <h1 class="titulo">Calculadora de Cachê</h1>
+          <h5>Preencha os dados para calcular o cachê da sua apresentação</h5>
+        </div>
+
+        <div class="resultado">
+          <h3 class="txtresultado">Seu orçamento é:</h3>
+          <h3 class="txtresultado">precogasolina</h3>
+        </div>
+
+        <div class="formulario">
+          <h3>Quantas pessoas se apresentarão?</h3>
+          <input id="numeroartistas" type="number" />
+
+          <h3>Precisará contratar estrutura externa?</h3>
+          <input type="checkbox" />
+
+          <h3>Se sim, qual o custo?</h3>
+          <input id="custoshow" type="number" />
+
+          <h3>Quanto tempo de show</h3>
+          <input id="temposhow" type="number" />
+
+          <h3>Quantos km de distância do seu local até o local do show?</h3>
+          <input id="distanciashow" type="number" />
+
+          <h3>Qual é o valor atual da gasolina?</h3>
+          <input id="precogasolina" type="number" />
+
+          <h3>Qual dia da semana?</h3>
+          <select name="diasemana" id="diasemana">
+            <option value="segunda">Segunda-Feira</option>
+            <option value="terca">Terça-Feira</option>
+            <option value="quarta">Quarta-Feira</option>
+            <option value="quinta">Quinta-Feira</option>
+            <option value="sexta">Sexta-Feira</option>
+            <option value="sabado">Sábado</option>
+            <option value="domingo">Domingo</option>
+          </select>
+
+          <h3>Qual é o custo de manutencão de equpamentos e estruturas?</h3>
+          <input />
+
+          <h3>Qual é a frequência dessas manutenções?</h3>
+          <input />
+
+          <h3>O cachê de todos os artistas é o mesmo?</h3>
+          <input type="checkbox" />
+
+          <h3>Quanto sua banda paga de cachê por músico?</h3>
+          <input />
+        </div>
+        <div class="btncontainer">
+          <button class="btn" onClick="alert(precogasolina )">Calcular</button>
+        </div>
+      </form>
+    </div>
+    <script type="text/javascript">
+      var numeroartistas = document.querySelector("#na");
+      var custoshow = document.querySelector("#cs");
+      var temposhow = document.querySelector("#ts");
+      var distanciashow = document.querySelector("#ds");
+      var precogasolina = document.querySelector("#precogasolina");
+      var numeroartistas = document.querySelector("#na");
+      var numeroartistas = document.querySelector("#na");
+
+      var custotransporte = document.querySelector("span");
+
+      function gasolina() {
+        custotransporte.innerHTML = parseInt(distanciashow.value) * 2;
+      }
+    </script>
+  </body>
+</html>
+
+//custotransporte = (precogasolina/consumocarro)/2*distanciashow *nao varia por
+hora //custo =
+custosom+custoluz+custotecnicosom+custotransporte+customanutencao+custopublicidade+custoadicional
+*nao varia por hora //maodeobratotal = numeroartistas*custocache *para 1h //ou
+//maodeobratotal = soma(todos os caches incluidos *para 1h //multiplicador
+diasemama: //segunda = 0.9 //terça = 0.9 //quarta = 1 //quinta = 1 //sexta = 1.2
+//sabado = 1.2 //domingo = 1.2 //precohora = (custo+maodeobratotal)*diasemana
+//cachetotal = precohora*quantidadehoras

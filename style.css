@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+body {
+  background-color: #999;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.calculadoracontainer {
+  justify-content: center;
+}
+.titulo {
+  font-size: 25px;
+}
+.btn {
+  background-color: #096504;
+  color: white;
+  font-size: 15px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin-top: 15px;
+}
+.btncontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.resultado {
+  display: flex;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.txtresultado {
+  color: white;
+  margin: 5px;
+}
+.formulario {
+  margin-left: 25px;
+  margin-right: 25px;
+}
