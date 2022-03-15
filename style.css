@@ -2,10 +2,11 @@
 
 body {
   height: 100%;
+  max-width: 100%;
   margin: 0px;
 }
 .bg {
-  background-image: url("../oBardoDex/assets/bg.jpg");
+  background-image: url("https://static5.depositphotos.com/1050781/503/i/600/depositphotos_5034561-stock-photo-medieval-tavern.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -150,10 +151,15 @@ input[type="checkbox"]:before {
 input:checked[type="checkbox"]:before {
   left: 20px;
 }
-.estruturachecked {
+#estruturachecked {
   display: none;
 }
-
+#transportechecked {
+  display: none;
+}
+#cacheunchecked {
+  display: none;
+}
 @media (max-width: 850px) {
   .columnform {
     display: flex;

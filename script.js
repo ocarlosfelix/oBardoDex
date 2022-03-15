@@ -6,6 +6,7 @@ estruturacheckbox.addEventListener("change", function () {
     console.log("Estrutura está marcado..");
   } else {
     estruturachecked.style.display = "none";
+    document.getElementById("custoestrutura").value = "0";
     console.log("Estrutura está desmarcado..");
   }
 });
@@ -30,6 +31,10 @@ cachecheckbox.addEventListener("change", function () {
   if (this.checked) {
     cachechecked.style.display = "inline";
     cacheunchecked.style.display = "none";
+    document.getElementById("cacheartista1").value = "0";
+    document.getElementById("cacheartista2").value = "0";
+    document.getElementById("cacheartista3").value = "0";
+    document.getElementById("cacheartista4").value = "0";
     console.log("Cachê está marcado..");
   } else {
     cachechecked.style.display = "none";
