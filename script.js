@@ -50,8 +50,8 @@ function valorfinal(event) {
   const custoestrutura = document.getElementById("custoestrutura").value;
   const custouber = document.getElementById("custouber").value;
   const consumocarro = document.getElementById("consumocarro").value;
-  const taxadiasemana = document.getElementById("diasemana").value;
-  const tempodeshow = document.getElementById("temposhow").value;
+  const inputhoras = document.getElementById("inputhoras").value;
+  const inputminutos = document.getElementById("inputminutos").value;
   const price = document.getElementById("precogasolina").value;
   const dist = document.getElementById("distanciashow").value;
   const total = document.getElementById("total");
@@ -62,16 +62,19 @@ function valorfinal(event) {
   const cacheigual = document.getElementById("cacheigual").value;
   const artistasnum = document.getElementById("artistasnum").value;
 
+  timetransform = (parseInt(inputhoras) * 60 + parseInt(inputminutos)) / 60;
+
   consumototal =
-    ((parseFloat(dist) / parseFloat(consumocarro)) * 2 * parseFloat(price)) + parseFloat(custouber);
+    (parseFloat(dist) / parseFloat(consumocarro)) * 2 * parseFloat(price) +
+    parseFloat(custouber);
 
   cachetotal =
     (parseInt(cacheartista1) +
       parseInt(cacheartista2) +
       parseInt(cacheartista3) +
       parseInt(cacheartista4) +
-      (parseInt(cacheigual) * parseInt(artistasnum))) *
-    parseFloat(tempodeshow);
+      parseInt(cacheigual) * parseInt(artistasnum)) *
+    parseFloat(timetransform);
 
   custototal = parseFloat(consumototal) + parseInt(custoestrutura);
   resultadototal = parseFloat(custototal) + parseInt(cachetotal);

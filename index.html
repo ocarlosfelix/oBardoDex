@@ -9,11 +9,24 @@
       initial-scale="1.0"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
+    <title>OBardoDex</title>
+    <link rel="shortcut icon" type="imagex/png" href="./assets/bardoicon.ico" />
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5634002037306796"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body class="bg">
@@ -51,27 +64,29 @@
               </div>
             </div>
 
-            <h3 class="formtag">Dia da semana</h3>
-            <div class="item">
-              <select name="diasemana" id="diasemana" class="diasemana">
-                <option value="0.9">Segunda-Feira</option>
-                <option value="0.9">Terça-Feira</option>
-                <option value="1">Quarta-Feira</option>
-                <option value="1">Quinta-Feira</option>
-                <option value="1.2">Sexta-Feira</option>
-                <option value="1.2">Sábado</option>
-                <option value="1.2">Domingo</option>
-              </select>
-            </div>
-
-            <h3 class="formtag">Duração do show</h3>
-            <div class="item">
-              <input
-                class="inputtext"
-                id="temposhow"
-                type="time"
-                value="01:00"
-              />
+            <h3 class="timetag">Duração do show</h3>
+            <div class="inputtempo">
+              <div class="horas">
+                <text class="timeid">Horas</text>
+                <input
+                  class="inputhoras"
+                  id="inputhoras"
+                  type="number"
+                  value="01"
+                  maxlength="2"
+                />
+              </div>
+              <div class="minutos">
+                <text class="timeid">Minutos</text>
+                <input
+                  class="inputminutos"
+                  id="inputminutos"
+                  type="number"
+                  value="00"
+                  maxlength="2"
+                  max="59"
+                />
+              </div>
             </div>
           </div>
 
@@ -139,12 +154,12 @@
             <div id="cachechecked">
               <h3 class="formtag">Cachê de cada artista por hora</h3>
               <div class="item">
-                <input class="inputtext" value="0" id="cacheigual"/>
+                <input class="inputtext" value="100" id="cacheigual" />
               </div>
 
               <h3 class="formtag">Número de artistas</h3>
               <div class="item">
-                <input class="inputtext" value="0" id="artistasnum"/>
+                <input class="inputtext" value="1" id="artistasnum" />
               </div>
             </div>
             <div id="cacheunchecked">
@@ -178,17 +193,37 @@
         </div>
 
         <div class="resultado">
-          <h3 class="txtresultado">R$<span id="total" class="total">0.00</span></h3>
+          <h3 class="txtresultado">
+            R$<span id="total" class="total">0.00</span>
+          </h3>
         </div>
 
         <div class="btncontainer">
-        <div class="submitarea">
-          <button id="btn" type="submit" class="btn">Calcular</button>
+          <div class="submitarea">
+            <button id="btn" type="submit" class="btn">Calcular</button>
+          </div>
         </div>
-        </div>
-
-
       </form>
+
+      <div class="anuncio">
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5634002037306796"
+          crossorigin="anonymous"
+        ></script>
+        <!-- CalculadoraHorizontalADS -->
+        <ins
+          class="adsbygoogle"
+          style="display: block"
+          data-ad-client="ca-pub-5634002037306796"
+          data-ad-slot="2802039536"
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+        ></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
     </div>
   </body>
   <script type="text/javascript" src="script.js"></script>
