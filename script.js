@@ -39,6 +39,7 @@ cachecheckbox.addEventListener("change", function () {
     cachechecked.style.display = "none";
     cacheunchecked.style.display = "inline";
     document.getElementById("cacheigual").value = "0";
+    document.getElementById("artistasnum").value = "0";
     console.log("Cachê está desmarcado..");
   }
 });
@@ -59,6 +60,7 @@ function valorfinal(event) {
   const cacheartista3 = document.getElementById("cacheartista3").value;
   const cacheartista4 = document.getElementById("cacheartista4").value;
   const cacheigual = document.getElementById("cacheigual").value;
+  const artistasnum = document.getElementById("artistasnum").value;
 
   consumototal =
     ((parseFloat(dist) / parseFloat(consumocarro)) * 2 * parseFloat(price)) + parseFloat(custouber);
@@ -68,7 +70,7 @@ function valorfinal(event) {
       parseInt(cacheartista2) +
       parseInt(cacheartista3) +
       parseInt(cacheartista4) +
-      parseInt(cacheigual)) *
+      (parseInt(cacheigual) * parseInt(artistasnum))) *
     parseFloat(tempodeshow);
 
   custototal = parseFloat(consumototal) + parseInt(custoestrutura);

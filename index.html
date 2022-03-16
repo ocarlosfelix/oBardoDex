@@ -9,12 +9,10 @@
       initial-scale="1.0"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
 
@@ -22,13 +20,10 @@
     <header class="header">
       <div class="headerdiv">
         <div>
-          <img class="logo" src="../oBardoDex/assets/bardologo.png" />
-        </div>
-        <div>
           <h1 class="titulo">Calculadora de Cachê</h1>
         </div>
         <div>
-          <h3 class="txtresultado">R$<span id="total" class="total"></span></h3>
+          <img class="logo" src="../oBardoDex/assets/bardologo.png" />
         </div>
       </div>
     </header>
@@ -56,7 +51,7 @@
               </div>
             </div>
 
-            <h3 class="formtag">Qual dia da semana?</h3>
+            <h3 class="formtag">Dia da semana</h3>
             <div class="item">
               <select name="diasemana" id="diasemana" class="diasemana">
                 <option value="0.9">Segunda-Feira</option>
@@ -69,7 +64,7 @@
               </select>
             </div>
 
-            <h3 class="formtag">Quanto tempo de show</h3>
+            <h3 class="formtag">Duração do show</h3>
             <div class="item">
               <input
                 class="inputtext"
@@ -142,9 +137,14 @@
               <label class="formtag">Sim</label>
             </div>
             <div id="cachechecked">
-              <h3 class="formtag">Qual é o cachê de cada artista por hora?</h3>
+              <h3 class="formtag">Cachê de cada artista por hora</h3>
               <div class="item">
                 <input class="inputtext" value="0" id="cacheigual"/>
+              </div>
+
+              <h3 class="formtag">Número de artistas</h3>
+              <div class="item">
+                <input class="inputtext" value="0" id="artistasnum"/>
               </div>
             </div>
             <div id="cacheunchecked">
@@ -177,9 +177,17 @@
           </div>
         </div>
 
+        <div class="resultado">
+          <h3 class="txtresultado">R$<span id="total" class="total">0.00</span></h3>
+        </div>
+
         <div class="btncontainer">
+        <div class="submitarea">
           <button id="btn" type="submit" class="btn">Calcular</button>
         </div>
+        </div>
+
+
       </form>
     </div>
   </body>
