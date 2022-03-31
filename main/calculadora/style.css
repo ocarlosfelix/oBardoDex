@@ -12,17 +12,16 @@ body {
   background-position: center;
   background-attachment: fixed;
 }
+
+/*estilos do header*/
 .header {
   background-color: black;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 50px;
-  padding: 1% 5%;
-}
-
-.headermenu {
+  height: 10vh;
+  padding: 2vh 5vw;
 }
 
 .headermenu ul {
@@ -38,68 +37,150 @@ body {
 
 .headermenu a {
   text-transform: uppercase;
-  color: #fff;
+  color: white;
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 2.5rem;
   text-decoration: none;
-  font-family: "Amatic SC", cursive;
+  font-family: "Amatic SC";
   transition: 0.17s;
 }
 
 .headermenu a:hover {
   color: orange;
-  font-size: 1.6em;
+  font-size: 2.55rem;
 }
 
 .logo {
-  max-height: 50px;
+  max-height: 5vh;
+  margin-top: 1vh;
 }
 
-.instagram {
-  width: 20px;
-  padding: 5px;
-  border-radius: 5px;
-  border-width: 1px;
-  transition: 0.1s;
-}
-
-.instagram:hover {
-  background-color: orange;
-}
-.valortotal {
-  font-size: 25px;
-  color: #fff;
-  align-items: center;
-}
-
+/* estilos da calculadora*/
 .calculadoracontainer {
   justify-content: center;
+  margin: 2vh 0 0 0;
 }
-.check {
+
+.columnform {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
 }
+
 .coluna {
   justify-content: center;
   margin-left: 40px;
   margin-right: 40px;
 }
-.columnform {
+
+.formtag {
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  padding: 15px;
+  font-size: 4rem;
+  color: #000;
+  font-family: "Amatic SC", cursive;
+  margin: 2vh 0 0 0;
+  text-align: center;
 }
+
+.formlabel {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 5rem;
+  color: #000;
+  font-family: "Amatic SC", cursive;
+  margin: 0 0 1.5vh 0;
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 2vh 0;
+}
+
+/*estilos do checkbox*/
+input[type="checkbox"] {
+  position: relative;
+  width: 10vw;
+  height: 3vh;
+  -webkit-appearance: none;
+  background: #e13a50;
+  outline: none;
+  border-radius: 1vh;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+  margin: 0 2vh 0 2vh;;
+}
+
+input:checked[type="checkbox"] {
+  background: #33da33;
+}
+input[type="checkbox"]:before {
+  content: "";
+  position: absolute;
+  width: 3vh;
+  height: 3vh;
+  border-radius: 1vh;
+  top: 0;
+  left: 0;
+  background: #fff;
+  transform: scale(1.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+input:checked[type="checkbox"]:before {
+  left: 3vh;
+}
+/*--- estilos do checkbox ---*/
+
+
+#estruturachecked {
+  display: none;
+}
+#transportechecked {
+  display: none;
+}
+#cacheunchecked {
+  display: none;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+}
+
+.input {
+  border-radius: 1vh;
+  width: 20vw;
+  height: 3vh;
+  padding-left: 2vh;
+  border-style: none;
+  margin: 0 0 2vh 0;
+  font-size: 2rem;
+  font-family:Arial;
+}
+
+.inputtext {
+  width: 150px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 5px;
+  padding-left: 10px;
+}
+
+
+
 .timetag {
   display: flex;
   justify-content: center;
-  font-size: 30px;
+  font-size: 5rem;
   color: #000;
   font-family: "Amatic SC", cursive;
 }
 .timeid {
-  font-size: 20px;
+  font-size: 5rem;
   font-family: "Amatic SC";
 }
 .inputtempo {
@@ -109,11 +190,7 @@ body {
   margin-bottom: 10px;
   margin-top: 0;
 }
-.inputhoras {
-  border-radius: 15px;
-  width: 35px;
-  padding-left: 10px;
-}
+
 .horas {
   display: flex;
   flex-direction: column;
@@ -127,27 +204,19 @@ body {
 }
 .inputminutos {
   border-radius: 15px;
-  width: 35px;
+  width: 20vw;
+  height: 3vh;
   padding-left: 10px;
 }
 
-.item {
-  display: flex;
-  justify-content: center;
-}
+
 .titulo {
-  font-size: 25px;
+  font-size: 5rem;
   justify-content: center;
   color: #fff;
   font-family: "Amatic SC", bold;
 }
-.formtag {
-  display: flex;
-  justify-content: center;
-  font-size: 30px;
-  color: #000;
-  font-family: "Amatic SC", cursive;
-}
+
 
 .diasemana {
   border-radius: 30px;
@@ -155,7 +224,7 @@ body {
 }
 
 .resultado {
-  margin-top: 5px;
+  margin: 3vh 0 3vh 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -163,7 +232,7 @@ body {
 }
 .txtresultado {
   color: #000;
-  font-size: 100px;
+  font-size: 15rem;
   margin: 5px;
   font-family: "Amatic SC";
   font-weight: bold;
@@ -175,7 +244,7 @@ body {
 }
 .total {
   color: #000;
-  font-size: 100px;
+  font-size: 15rem;
   margin: 5px;
   font-family: "Amatic SC";
   font-weight: bold;
@@ -183,70 +252,30 @@ body {
 .cacheporartista {
   display: flex;
   flex-direction: row;
-}
-.inputtext {
-  width: 150px;
-  background-color: #fff;
-  border-radius: 16px;
-  box-shadow: 5px;
-  padding-left: 10px;
-}
-input[type="checkbox"] {
-  position: relative;
-  width: 40px;
-  height: 20px;
-  -webkit-appearance: none;
-  background: #e13a50;
-  outline: none;
-  border-radius: 10px;
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
-  transition: 0.5s;
+  align-items: center;
+  justify-content: center;
+
 }
 
-input:checked[type="checkbox"] {
-  background: #33da33;
-}
-input[type="checkbox"]:before {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  border-radius: 10px;
-  top: 0;
-  left: 0;
-  background: #fff;
-  transform: scale(1.1);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  transition: 0.5s;
-}
-input:checked[type="checkbox"]:before {
-  left: 20px;
-}
-#estruturachecked {
-  display: none;
-}
-#transportechecked {
-  display: none;
-}
-#cacheunchecked {
-  display: none;
+.cacheporartistarow {
+  margin: 2vh;
 }
 
 .btncontainer {
-  height: 50px;
+  height: 3vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 50px;
-  margin-top: 50px;
+  margin: 5vh 0 5vh 0;
 }
 
 .btn {
   overflow: hidden;
   text-decoration: none;
-  padding: 20px 100px;
+  padding: 2vh 15vh;
   font-family: "Amatic SC";
-  font-size: 35px;
+  font-weight: bold;
+  font-size: 5rem;
   color: #fff;
   position: relative;
   border: none;
@@ -256,18 +285,18 @@ input:checked[type="checkbox"]:before {
     #ee6306 50%,
     #960f0f 100%
   );
-  border-radius: 30px;
+  border-radius: 10vh;
   box-shadow: 0 0 0 0 rgba(255, 115, 0, 0.5), 0 0 0 0 rgba(223, 31, 6, 0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .btn::after {
   content: "";
-  width: 700px;
-  height: 700px;
+  width: 400vh;
+  height: 400vh;
   position: absolute;
-  top: -100px;
-  left: -100px;
+  top: -30vh;
+  left: -30vh;
   background-color: #ff3cac;
   background-image: linear-gradient(
     225deg,
@@ -280,54 +309,40 @@ input:checked[type="checkbox"]:before {
 }
 
 .btn:hover {
-  transform: translate(0, -6px);
-  box-shadow: 10px -10px 25px 0 rgba(255, 115, 0, 0.5),
-    -10px 10px 25px 0 rgba(173, 26, 6, 0.5);
+  transform: translate(0, -1vh);
+  box-shadow: 2vh -2vh 3vh 0 rgba(255, 115, 0, 0.5),
+    -2vh 2vh 3vh 0 rgba(173, 26, 6, 0.5);
 }
 
 .btn:hover::after {
   transform: rotate(150deg);
 }
 
-@media (max-width: 850px) {
-  .columnform {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 15px;
-  }
-
-  .cacheporartista {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
+/*estilos do footer*/
 footer {
   background-color: #000;
   text-align: center;
-  padding: 20px 0;
+  padding: 2vh 0;
 }
 
 .footercontent {
-  margin: auto 0%;
+  margin: auto 0;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .footerlogo {
   display: inline-block;
-  margin-right: 15px;
+  margin-right: 3vw;;
 }
 
 .footertext {
-  display: inline-block;
-  margin-left: 15px;
+  margin-left: 3vw;
 }
 
 .footertext p {
-  color: #fff;
+  color: white;
   font-family: "Amatic SC";
-  font-size: 18px;
+  font-size: 2rem;
 }

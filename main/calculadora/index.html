@@ -9,6 +9,8 @@
       initial-scale="1.0"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../../main/reset.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,7 +21,7 @@
       href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+
     <title>Meu Cachê</title>
     <link
       rel="shortcut icon"
@@ -63,7 +65,7 @@
       <form onsubmit="valorfinal(event)">
         <div class="columnform">
           <div class="coluna">
-            <h3 class="formtag">Precisará contratar estrutura externa?</h3>
+            <h3 class="formlabel">Precisará contratar estrutura externa?</h3>
             <div class="check">
               <label class="formtag">Não</label>
               <input type="checkbox" name="checkestrutura" />
@@ -71,10 +73,10 @@
             </div>
 
             <div id="estruturachecked">
-              <h3 class="formtag">Qual o custo de estrutura do show?</h3>
+              <h3 class="formlabel">Qual o custo de estrutura do show?</h3>
               <div class="item">
                 <input
-                  class="inputtext"
+                  class="input"
                   id="custoestrutura"
                   type="number"
                   value="0"
@@ -82,22 +84,22 @@
               </div>
             </div>
 
-            <h3 class="timetag">Duração do show</h3>
+            <h3 class="formlabel">Duração do show</h3>
             <div class="inputtempo">
               <div class="horas">
-                <text class="timeid">Horas</text>
+                <text class="formtag">Horas</text>
                 <input
-                  class="inputhoras"
+                  class="input"
                   id="inputhoras"
                   type="number"
-                  value="01"
+                  value="1"
                   maxlength="2"
                 />
               </div>
               <div class="minutos">
-                <text class="timeid">Minutos</text>
+                <text class="formtag">Minutos</text>
                 <input
-                  class="inputminutos"
+                  class="input"
                   id="inputminutos"
                   type="number"
                   value="00"
@@ -109,7 +111,7 @@
           </div>
 
           <div class="coluna">
-            <h3 class="formtag">Transporte próprio?</h3>
+            <h3 class="formlabel">Transporte próprio?</h3>
             <div class="check">
               <label class="formtag">Não</label>
               <input type="checkbox" name="checktransporte" />
@@ -117,20 +119,20 @@
             </div>
 
             <div id="transportechecked">
-              <h3 class="formtag">Distância até o local do show?</h3>
+              <h3 class="formlabel">Distância até o local do show?</h3>
               <div class="item">
                 <input
-                  class="inputtext"
+                  class="input"
                   id="distanciashow"
                   type="number"
                   value="0"
                 />
               </div>
 
-              <h3 class="formtag">Qual é o valor atual da gasolina?</h3>
+              <h3 class="formlabel">Qual é o valor atual da gasolina?</h3>
               <div class="item">
                 <input
-                  class="inputtext"
+                  class="input"
                   id="precogasolina"
                   type="number"
                   value="7.39"
@@ -138,10 +140,10 @@
                 />
               </div>
 
-              <h3 class="formtag">Qual é o consumo do carro (Km/L)?</h3>
+              <h3 class="formlabel">Qual é o consumo do carro (Km/L)?</h3>
               <div class="item">
                 <input
-                  class="inputtext"
+                  class="input"
                   id="consumocarro"
                   type="number"
                   value="10"
@@ -150,10 +152,10 @@
             </div>
 
             <div id="transporteunchecked">
-              <h3 class="formtag">Preço do transporte contratado</h3>
+              <h3 class="formlabel">Preço do transporte contratado</h3>
               <div class="item">
                 <input
-                  class="inputtext"
+                  class="input"
                   id="custouber"
                   type="number"
                   value="0"
@@ -163,50 +165,56 @@
           </div>
 
           <div class="coluna">
-            <h3 class="formtag">O cachê de todos os artistas é o mesmo?</h3>
+            <h3 class="formlabel">O cachê de todos os artistas é o mesmo?</h3>
             <div class="check">
               <label class="formtag">Não</label>
               <input type="checkbox" name="checkcache" checked />
               <label class="formtag">Sim</label>
             </div>
             <div id="cachechecked">
-              <h3 class="formtag">Cachê de cada artista por hora</h3>
+              <h3 class="formlabel">Cachê de cada artista por hora</h3>
               <div class="item">
-                <input class="inputtext" value="100" id="cacheigual" />
+                <input class="input" value="100" id="cacheigual" />
               </div>
 
-              <h3 class="formtag">Número de artistas</h3>
+              <h3 class="formlabel">Número de artistas</h3>
               <div class="item">
-                <input class="inputtext" value="1" id="artistasnum" />
+                <input class="input" value="1" id="artistasnum" />
               </div>
             </div>
             <div id="cacheunchecked">
               <div class="cacheporartista">
-                <div>
-                  <h3 class="formtag">Cachê do artista 01:</h3>
+                <div class="cacheporartistarow">
+                  <h3 class="formtag">Cachê <br> artista 01:</h3>
                   <div class="item">
-                    <input class="inputtext" id="cacheartista1" value="0" />
+                    <input class="input" id="cacheartista1" value="0" />
                   </div>
 
-                  <h3 class="formtag">Cachê do artista 02:</h3>
+                  <h3 class="formtag">Cachê <br> artista 02:</h3>
                   <div class="item">
-                    <input class="inputtext" id="cacheartista2" value="0" />
+                    <input class="input" id="cacheartista2" value="0" />
                   </div>
                 </div>
 
-                <div>
-                  <h3 class="formtag">Cachê do artista 03:</h3>
+                <div class="cacheporartistarow">
+                  <h3 class="formtag">Cachê <br> artista 03:</h3>
                   <div class="item">
-                    <input class="inputtext" id="cacheartista3" value="0" />
+                    <input class="input" id="cacheartista3" value="0" />
                   </div>
 
-                  <h3 class="formtag">Cachê do artista 04:</h3>
+                  <h3 class="formtag">Cachê <br> artista 04:</h3>
                   <div class="item">
-                    <input class="inputtext" id="cacheartista4" value="0" />
+                    <input class="input" id="cacheartista4" value="0" />
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+        </div>     
+
+        <div class="btncontainer">
+          <div class="submitarea">
+            <button id="btn" type="submit" class="btn">Calcular</button>
           </div>
         </div>
 
@@ -214,12 +222,6 @@
           <h3 class="txtresultado">
             R$<span id="total" class="total">0.00</span>
           </h3>
-        </div>
-
-        <div class="btncontainer">
-          <div class="submitarea">
-            <button id="btn" type="submit" class="btn">Calcular</button>
-          </div>
         </div>
       </form>
 
