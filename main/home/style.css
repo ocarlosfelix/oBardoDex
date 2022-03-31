@@ -15,14 +15,11 @@ body {
 .header {
   background-color: black;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 50px;
-  padding: 1% 5%;
-}
-
-.headermenu {
+  height: 10vh;
+  padding: 2vh 5vw;
 }
 
 .headermenu ul {
@@ -38,33 +35,22 @@ body {
 
 .headermenu a {
   text-transform: uppercase;
-  color: #fff;
+  color: white;
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 2.5rem;
   text-decoration: none;
-  font-family: "Amatic SC", cursive;
+  font-family: "Amatic SC";
   transition: 0.17s;
 }
 
 .headermenu a:hover {
   color: orange;
-  font-size: 1.6em;
+  font-size: 2.55rem;
 }
 
 .logo {
-  max-height: 50px;
-}
-
-.instagram {
-  width: 20px;
-  padding: 5px;
-  border-radius: 5px;
-  border-width: 1px;
-  transition: 0.1s;
-}
-
-.instagram:hover {
-  background-color: orange;
+  max-height: 5vh;
+  margin-top: 1vh;
 }
 
 /*estilos do main - section banner*/
@@ -75,7 +61,7 @@ body {
   background-position: center;
   background-attachment: fixed;
   width: 100%;
-  height: 530px;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -83,21 +69,21 @@ body {
 }
 
 .bannertitle {
-  font-size: 120px;
+  font-size: 10rem;
   justify-content: center;
-  color: #fff;
+  color: white;
   font-family: "Amatic SC";
   font-weight: bold;
 }
 
 .bannertext {
   display: flex;
-  font-size: 30px;
+  font-size: 4rem;
   text-justify: center;
   justify-content: center;
-  color: #fff;
+  color: white;
   font-family: "Amatic SC";
-  margin: 50px;
+  margin: 5vh;
 }
 
 /*estilos do main - section parceiros*/
@@ -112,7 +98,7 @@ body {
 }
 
 .parceirostitle {
-  font-size: 50px;
+  font-size: 8rem;
   justify-content: center;
   font-weight: bold;
   color: #000;
@@ -125,47 +111,50 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin: 2% 0;
 }
 
 .logo-parceiros {
   display: flex;
-  margin: 10px 50px;
+  width: 5vh;
+  padding: 2vh 5vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .parceirositem {
-  font-size: 25px;
+  font-size: 2rem;
   justify-content: center;
+  align-items: center;
   color: #000;
   font-family: "Amatic SC";
   font-weight: bold;
   margin: 0;
+  text-align: center;
 }
 
 .logos {
-  margin: 10px 0 0 0;
-  max-width: 50px;
-  max-height: 50px;
-  border-radius: 25px;
+  margin: 1vh 0 0 0;
+  max-width: 5vh;
+  max-height: 5vh;
+  border-radius: 5vh;
 }
 
 .logos:hover {
-  margin: 10px 0 0 0;
-  max-width: 60px;
-  max-height: 60px;
-  border-radius: 35px;
+  margin: 1vh 0 0 0;
+  max-width: 5.5vh;
+  max-height: 5.5vh;
+  border-radius: 5.5vh;
+  cursor: pointer;
 }
 
 .parceirostext {
-  font-size: 25px;
+  font-size: 2rem;
   text-justify: center;
   justify-content: center;
   color: #000;
   font-family: "Amatic SC";
-  margin: 10px;
+  margin: 1vh;
 }
 
 /*estilos do main - form contato*/
@@ -173,10 +162,10 @@ body {
   background-image: url("../../assets/contact-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: right;
+  background-position: center;
   background-attachment: fixed;
   height: auto;
-  padding: 20px 20px 20px 50px;
+  padding: 2vh 2vh 2vh 5vh;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -184,9 +173,9 @@ body {
 }
 
 .formtitle {
-  font-size: 50px;
+  font-size: 6vh;
   justify-content: center;
-  color: #fff;
+  color: white;
   font-family: "Amatic SC";
   font-weight: bold;
   margin-bottom: 15px;
@@ -196,12 +185,7 @@ body {
   display: flex;
   justify-content: center;
 }
-.titulo {
-  font-size: 25px;
-  justify-content: center;
-  color: #fff;
-  font-family: "Amatic SC", bold;
-}
+
 .formtag {
   display: flex;
   justify-content: center;
@@ -215,31 +199,48 @@ body {
 }
 
 .formtext {
-  font-size: 20px;
+  font-size: 3rem;
   text-justify: center;
   justify-content: center;
-  color: #fff;
+  color: white;
   font-family: "Amatic SC";
-  margin-top: 5px;
+  margin: 1vh 0 1vh 0;
+}
+
+.inputtext {
+  border-style: none;
+  border-radius: 0.5vh;
+  height: 2vh;
+  width: auto;
+  padding: 1vw;
+}
+
+.textarea {
+  border-style: none;
+  border-radius: 0.5vh;
+  padding: 1vw;
 }
 
 .btncontato {
   background-color: orange;
   border-style: none;
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 3rem;
   color: white;
   margin: 10px 0 0 0;
   transition: 0.1s;
   cursor: pointer;
+  font-family: "Amatic SC";
+  font-weight: bold;
 }
 
 .formradio {
   display: flex;
   flex-direction: column;
   font-family: "Amatic SC";
-  font-size: 20px;
-  color: #fff;
+  font-size: 2vh;
+  color: white;
+  margin-bottom: 1vh;
 }
 
 .btncontato:hover {
@@ -250,14 +251,14 @@ body {
 footer {
   background-color: #000;
   text-align: center;
-  padding: 20px 0;
+  padding: 2vh 0;
 }
 
 .footercontent {
   margin: auto 0%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .footerlogo {
@@ -266,12 +267,11 @@ footer {
 }
 
 .footertext {
-  display: inline-block;
   margin-left: 15px;
 }
 
 .footertext p {
-  color: #fff;
+  color: white;
   font-family: "Amatic SC";
-  font-size: 18px;
+  font-size: 2rem;
 }
