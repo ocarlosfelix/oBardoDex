@@ -15,14 +15,11 @@ body {
 .header {
   background-color: black;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 50px;
-  padding: 1% 5%;
-}
-
-.headermenu {
+  height: 10vh;
+  padding: 2vh 5vw;
 }
 
 .headermenu ul {
@@ -38,33 +35,22 @@ body {
 
 .headermenu a {
   text-transform: uppercase;
-  color: #fff;
+  color: white;
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 2.5rem;
   text-decoration: none;
-  font-family: "Amatic SC", cursive;
+  font-family: "Amatic SC";
   transition: 0.17s;
 }
 
 .headermenu a:hover {
   color: orange;
-  font-size: 1.6em;
+  font-size: 2.55rem;
 }
 
 .logo {
-  max-height: 50px;
-}
-
-.instagram {
-  width: 20px;
-  padding: 5px;
-  border-radius: 5px;
-  border-width: 1px;
-  transition: 0.1s;
-}
-
-.instagram:hover {
-  background-color: orange;
+  max-height: 5vh;
+  margin-top: 1vh;
 }
 
 /*estilos do main - section banner*/
@@ -74,262 +60,111 @@ body {
   background-size: cover;
   background-position: bottom;
   background-attachment: fixed;
-  width: 100%;
-  height: 200px;
+  max-width: 100%;
+  height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 30px;
+  margin: 2vh 0 2vh 0;
 }
 
 .quemsomosbanner {
   background-color: #000;
   width: 100%;
-  height: 200px;
+  height: 30vh;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 3vh;
 }
 
 .bannertitle {
-  font-size: 120px;
+  font-size: 10rem;
   justify-content: center;
   color: #fff;
   font-family: "Amatic SC";
   font-weight: bold;
+}
+
+.quemsomoscontainer {
+  height: 20vh;
+  display:flex;
+  flex-direction: row;
 }
 
 .quemsomostitle {
-  font-size: 60px;
+  font-size: 5rem;
   justify-content: center;
   color: #fff;
   font-family: "Amatic SC";
   font-weight: bold;
+  
+  margin-bottom: 2vh;
 }
 
 .quemsomosimg {
-  width: 300px;
+  height: 17.5vh;
 }
 
 .quemsomostext {
   display: flex;
-  font-size: 30px;
+  font-size: 2rem;
   text-justify: center;
   justify-content: center;
-  color: #fff;
-  font-family: "Amatic SC";
-  margin: 50px;
-}
-
-.quemsomossocialmediac a {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
   color: #fff;
   font-family: "Amatic SC";
-  font-size: 30px;
-  margin-right: 20px;
-  text-decoration: none;
+  margin: 0 2vw 0 2vw;
 }
 
-.quemsomossocialmediac a:hover {
-  color: orange;
-  cursor: pointer;
-}
-
-.quemsomossocialmediaw a {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  font-family: "Amatic SC";
-  font-size: 30px;
-  margin-left: 20px;
-  text-decoration: none;
-}
-
-.quemsomossocialmediaw a:hover {
-  color: orange;
-  cursor: pointer;
-}
-
-/*estilos do main - section parceiros*/
-.parceiros {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  padding: 3% 0;
-}
-
-.parceirostitle {
-  font-size: 50px;
-  justify-content: center;
-  font-weight: bold;
-  color: #000;
-  font-family: "Amatic SC", bold;
-  margin: 0;
-}
-
-.parceiros-container {
+.quemsomossocialmedia {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  margin: 2% 0;
-}
-
-.logo-parceiros {
-  display: flex;
-  margin: 10px 50px;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.parceirositem {
-  font-size: 25px;
-  justify-content: center;
-  color: #000;
-  font-family: "Amatic SC";
-  font-weight: bold;
-  margin: 0;
-}
-
-.logos {
-  margin: 10px 0 0 0;
-  max-width: 50px;
-  max-height: 50px;
-  border-radius: 25px;
-}
-
-.logos:hover {
-  margin: 10px 0 0 0;
-  max-width: 60px;
-  max-height: 60px;
-  border-radius: 35px;
-}
-
-.parceirostext {
-  font-size: 25px;
-  text-justify: center;
-  justify-content: center;
-  color: #000;
-  font-family: "Amatic SC";
-  margin: 10px;
-}
-
-/*estilos do main - form contato*/
-.formbackground {
-  background-image: url("../../assets/contact-background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: right;
-  background-attachment: fixed;
-  height: auto;
-  padding: 20px 20px 20px 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-}
-
-.formtitle {
-  font-size: 50px;
-  justify-content: center;
+.quemsomossocialmedia a {
   color: #fff;
   font-family: "Amatic SC";
-  font-weight: bold;
-  margin-bottom: 15px;
+  font-size: 2rem;
+  margin: 0 3vw 0 3vw;
+  text-decoration: none;
 }
 
-.item {
-  display: flex;
-  justify-content: center;
-}
-.titulo {
-  font-size: 25px;
-  justify-content: center;
-  color: #fff;
-  font-family: "Amatic SC", bold;
-}
-.formtag {
-  display: flex;
-  justify-content: center;
-  font-size: 30px;
-  color: #000;
-  font-family: "Amatic SC", cursive;
-}
-.contato {
-  display: flex;
-  flex-direction: column;
-}
-
-.formtext {
-  font-size: 20px;
-  text-justify: center;
-  justify-content: center;
-  color: #fff;
-  font-family: "Amatic SC";
-  margin-top: 5px;
-}
-
-.btncontato {
-  background-color: orange;
-  border-style: none;
-  border-radius: 5px;
-  font-size: 20px;
-  color: white;
-  margin: 10px 0 0 0;
-  transition: 0.1s;
+.quemsomossocialmedia a:hover {
+  color: orange;
   cursor: pointer;
 }
 
-.formradio {
-  display: flex;
-  flex-direction: column;
-  font-family: "Amatic SC";
-  font-size: 20px;
-  color: #fff;
-}
-
-.btncontato:hover {
-  background-color: darkorange;
-}
 
 /*estilos do footer*/
 footer {
   background-color: #000;
   text-align: center;
-  padding: 20px 0;
+  padding: 2vh 0;
 }
 
 .footercontent {
-  margin: auto 0%;
+  margin: auto 0;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .footerlogo {
   display: inline-block;
-  margin-right: 15px;
+  margin-right: 3vw;;
 }
 
 .footertext {
-  display: inline-block;
-  margin-left: 15px;
+  margin-left: 3vw;
 }
 
 .footertext p {
-  color: #fff;
+  color: white;
   font-family: "Amatic SC";
-  font-size: 18px;
+  font-size: 2rem;
 }
