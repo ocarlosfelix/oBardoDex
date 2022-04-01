@@ -1,58 +1,5 @@
 @charset "UTF-8";
 
-body {
-  max-width: 100vw;
-}
-.bg {
-  background-image: url("https://img.freepik.com/fotos-gratis/papel-de-pergaminho-velho-papel-de-parede-de-textura-de-banner-horizontal_118047-9982.jpg?size=626&ext=jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-/*estilos do header*/
-.header {
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 10vw;
-  padding: 8vw;
-}
-
-.headermenu ul {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-.headermenu li {
-  padding: 1.5em;
-}
-
-.headermenu a {
-  text-transform: uppercase;
-  color: white;
-  font-weight: bold;
-  font-size: 2.5rem;
-  text-decoration: none;
-  font-family: "Amatic SC";
-  transition: 0.17s;
-}
-
-.headermenu a:hover {
-  color: orange;
-  font-size: 2.55rem;
-}
-
-.logo {
-  height: 10vw;
-  margin: 0.5vw;
-}
-
 /*estilos do main - section banner*/
 .banner {
   background-image: url("../../assets/agreg-background.jpg");
@@ -250,31 +197,5 @@ body {
   background-color: darkorange;
 }
 
-/*estilos do footer*/
-footer {
-  background-color: #000;
-  text-align: center;
-  padding: 2vh 0;
-}
-
-.footercontent {
-  margin: auto 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.footerlogo {
-  display: inline-block;
-  margin-right: 3vw;
-}
-
-.footertext {
-  margin-left: 3vw;
-}
-
-.footertext p {
-  color: white;
-  font-family: "Amatic SC";
-  font-size: 2rem;
+@media screen and (min-width: 768px) {
 }

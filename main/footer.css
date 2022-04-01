@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+footer {
+  background-color: #000;
+  text-align: center;
+  padding: 2vh 0;
+}
+
+.footercontent {
+  margin: auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footerlogo {
+  display: inline-block;
+  margin-right: 3vw;
+}
+
+.footertext {
+  margin-left: 3vw;
+}
+
+.footertext p {
+  color: white;
+  font-family: "Amatic SC";
+  font-size: 2rem;
+}

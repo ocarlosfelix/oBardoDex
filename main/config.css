@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+body {
+  max-width: 100vw;
+}
+.bg {
+  background-image: url("https://img.freepik.com/fotos-gratis/papel-de-pergaminho-velho-papel-de-parede-de-textura-de-banner-horizontal_118047-9982.jpg?size=626&ext=jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}

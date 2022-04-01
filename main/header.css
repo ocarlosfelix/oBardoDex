@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+.header {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 10vw;
+  padding: 8vw;
+}
+
+.headermenu ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.headermenu li {
+  padding: 1.5em;
+}
+
+.headermenu a {
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-decoration: none;
+  font-family: "Amatic SC";
+  transition: 0.17s;
+}
+
+.headermenu a:hover {
+  color: orange;
+  font-size: 2.55rem;
+}
+
+.logo {
+  height: 10vw;
+  margin: 0.5vw;
+}
