@@ -16,10 +16,10 @@ body {
   background-color: black;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  height: 10vh;
-  padding: 2vh 5vw;
+  height: 10vw;
+  padding: 8vw;
 }
 
 .headermenu ul {
@@ -49,10 +49,9 @@ body {
 }
 
 .logo {
-  max-height: 5vh;
-  margin-top: 1vh;
+  height: 10vw;
+  margin: 0.5vw;
 }
-
 /*estilos do main - section banner*/
 
 .banner1 {
@@ -62,12 +61,12 @@ body {
   background-position: center;
   background-attachment: fixed;
   width: 100%;
-  height: 50vh;
+  height: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 2vh 0 2vh 0;
+  margin: 2vw 0 2vw 0;
 }
 
 .banner2 {
@@ -77,27 +76,27 @@ body {
   background-position: center;
   background-attachment: fixed;
   width: 100%;
-  height: 50vh;
+  height: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 2vh;
+  margin-bottom: 2vw;
 }
 
 .banner3 {
-  background-image: url("../../assets/chalkboard-background.jpeg");
+  background-image: url("../../assets/chalkboard-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   width: 100%;
-  height: 50vh;
+  height: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 2vh;
+  margin-bottom: 2vw;
 }
 .banner4 {
   background-image: url("../../assets/producao-background.jpg");
@@ -106,12 +105,12 @@ body {
   background-position: center;
   background-attachment: fixed;
   width: 100%;
-  height: 50vh;
+  height: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 2vh;
+  margin-bottom: 2vw;
 }
 
 .banner5 {
@@ -121,12 +120,12 @@ body {
   background-position: center;
   background-attachment: fixed;
   width: 100%;
-  height: 50vh;
+  height: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 2vh;
+  margin-bottom: 2vw;
 }
 
 .banner6 {
@@ -136,12 +135,12 @@ body {
   background-position: center;
   background-attachment: fixed;
   width: 100%;
-  height: 50vh;
+  height: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 2vh;
+  margin-bottom: 2vw;
 }
 
 .produtolink {
@@ -165,17 +164,17 @@ body {
 .bannertext {
   display: flex;
   font-size: 4rem;
-  text-justify: center;
+  text-align: center;
   justify-content: center;
   color: #fff;
   font-family: "Amatic SC";
-  margin: 3vh;
+  margin: 3vw;
 }
 /*estilos do footer*/
 footer {
   background-color: #000;
   text-align: center;
-  padding: 2vh 0;
+  padding: 2vw 0;
 }
 
 .footercontent {
@@ -187,7 +186,7 @@ footer {
 
 .footerlogo {
   display: inline-block;
-  margin-right: 3vw;;
+  margin-right: 3vw;
 }
 
 .footertext {
