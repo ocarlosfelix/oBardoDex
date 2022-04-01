@@ -2,7 +2,7 @@
 
 /*estilos do main - section banner*/
 .banner {
-  background-image: url("../../assets/quemsomos-background.jpg");
+  background-image: url("../assets/quemsomos-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
