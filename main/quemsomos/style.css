@@ -18,7 +18,6 @@
 
 .quemsomosbanner {
   background-color: #000;
-  width: 100vw;
   height: 60vw;
   display: flex;
   flex-direction: column;
@@ -86,4 +85,95 @@
 .quemsomossocialmedia a:hover {
   color: orange;
   cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1024px) {
+  /*estilos do main - section banner*/
+  .banner {
+    background-image: url("../../assets/quemsomos-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    max-width: 100%;
+    height: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2vw 0 2vw 0;
+  }
+
+  .quemsomosbanner {
+    background-color: #000;
+    height: 35vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2vw;
+  }
+
+  .bannertitle {
+    font-size: 10rem;
+    justify-content: center;
+    color: #fff;
+    font-family: "Amatic SC";
+    font-weight: bold;
+  }
+
+  .quemsomoscontainer {
+    height: 35vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .quemsomostitle {
+    font-size: 5rem;
+    justify-content: center;
+    color: #fff;
+    font-family: "Amatic SC";
+    font-weight: bold;
+    margin-bottom: 2vw;
+  }
+
+  .quemsomosimg {
+    height: 20vw;
+  }
+
+  .quemsomostext {
+    display: flex;
+    font-size: 2rem;
+    text-justify: center;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: "Amatic SC";
+    margin: 0 2vw 0 2vw;
+  }
+
+  .quemsomossocialmedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2vw 0;
+  }
+
+  .quemsomossocialmedia a {
+    color: #fff;
+    font-family: "Amatic SC";
+    font-size: 2rem;
+    margin: 0 3vw 0 3vw;
+    text-decoration: none;
+  }
+
+  .quemsomossocialmedia a:hover {
+    color: orange;
+    cursor: pointer;
+  }
 }
