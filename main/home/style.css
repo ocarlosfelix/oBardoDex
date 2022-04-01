@@ -7,7 +7,6 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  width: 100vw;
   height: 70vw;
   display: flex;
   flex-direction: column;
@@ -28,16 +27,16 @@
 .bannertext {
   display: flex;
   font-size: 3rem;
-  text-justify: center;
+  width: 80vw;
+  text-align: center;
   justify-content: center;
   color: white;
   font-family: "Amatic SC";
-  margin: 5vh;
+  padding: 5vh 0;
 }
 
 /*estilos do main - section parceiros*/
 .parceiros {
-  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -198,4 +197,200 @@
 }
 
 @media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1024px) {
+  /*estilos do main - section banner*/
+  .banner {
+    background-image: url("../../assets/agreg-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 35vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bannertitle {
+    font-size: 6rem;
+    justify-content: center;
+    color: white;
+    font-family: "Amatic SC";
+    font-weight: bold;
+    margin-top: 5vw;
+  }
+
+  .bannertext {
+    display: flex;
+    font-size: 2rem;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-family: "Amatic SC";
+    width: 50vw;
+  }
+
+  /*estilos do main - section parceiros*/
+  .parceiros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3vh 0;
+  }
+
+  .parceirostitle {
+    font-size: 5rem;
+    justify-content: center;
+    font-weight: bold;
+    color: #000;
+    font-family: "Amatic SC", bold;
+    margin: 0;
+  }
+
+  .parceiros-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo-parceiros {
+    display: flex;
+    width: 5vw;
+    padding: 3vw 10vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .parceirositem {
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-family: "Amatic SC";
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+  }
+
+  .logos {
+    margin: 1vh 0 0 0;
+    width: 6vw;
+    height: 6vw;
+    border-radius: 6vw;
+  }
+
+  .logos:hover {
+    margin: 1vh 0 0 0;
+    width: 7vw;
+    height: 7vw;
+    border-radius: 7vw;
+    cursor: pointer;
+  }
+
+  .parceirostext {
+    font-size: 2rem;
+    text-align: center;
+    justify-content: center;
+    color: #000;
+    font-family: "Amatic SC";
+    margin: 1vh;
+  }
+
+  /*estilos do main - form contato*/
+  .formbackground {
+    background-image: url("../../assets/contact-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: auto;
+    padding: 2vh 2vh 2vh 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .formtitle {
+    font-size: 10vw;
+    justify-content: center;
+    color: white;
+    font-family: "Amatic SC";
+    font-weight: bold;
+    margin-bottom: 1.5vh;
+  }
+
+  .item {
+    display: flex;
+    justify-content: center;
+  }
+
+  .formtag {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    color: #000;
+    font-family: "Amatic SC", cursive;
+  }
+  .contato {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formtext {
+    font-size: 3rem;
+    text-justify: center;
+    justify-content: center;
+    color: white;
+    font-family: "Amatic SC";
+    margin: 1vh 0 1vh 0;
+  }
+
+  .inputtext {
+    border-style: none;
+    border-radius: 0.5vh;
+    height: 2vh;
+    width: auto;
+    padding: 1vw;
+    background-color: khaki;
+  }
+
+  .textarea {
+    border-style: none;
+    border-radius: 0.5vh;
+    padding: 1vw;
+    background-color: khaki;
+  }
+
+  .btncontato {
+    background-color: orange;
+    border-style: none;
+    border-radius: 5px;
+    font-size: 3rem;
+    color: white;
+    margin: 1vh 0 0 0;
+    transition: 0.1s;
+    cursor: pointer;
+    font-family: "Amatic SC";
+    font-weight: bold;
+  }
+
+  .formradio {
+    display: flex;
+    flex-direction: column;
+    font-family: "Amatic SC";
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 1vh;
+  }
+
+  .btncontato:hover {
+    background-color: darkorange;
+  }
 }
