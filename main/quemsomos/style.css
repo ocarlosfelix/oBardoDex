@@ -16,10 +16,10 @@ body {
   background-color: black;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  height: 10vh;
-  padding: 2vh 5vw;
+  height: 10vw;
+  padding: 8vw;
 }
 
 .headermenu ul {
@@ -49,10 +49,9 @@ body {
 }
 
 .logo {
-  max-height: 5vh;
-  margin-top: 1vh;
+  height: 10vw;
+  margin: 0.5vw;
 }
-
 /*estilos do main - section banner*/
 .banner {
   background-image: url("../../assets/quemsomos-background.jpg");
@@ -61,23 +60,23 @@ body {
   background-position: bottom;
   background-attachment: fixed;
   max-width: 100%;
-  height: 20vh;
+  height: 20vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 2vh 0 2vh 0;
+  margin: 2vw 0 2vw 0;
 }
 
 .quemsomosbanner {
   background-color: #000;
-  width: 100%;
-  height: 30vh;
+  width: 100vw;
+  height: 60vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 3vh;
+  margin-bottom: 5vw;
 }
 
 .bannertitle {
@@ -89,9 +88,11 @@ body {
 }
 
 .quemsomoscontainer {
-  height: 20vh;
-  display:flex;
+  height: 20vw;
+  display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .quemsomostitle {
@@ -100,12 +101,11 @@ body {
   color: #fff;
   font-family: "Amatic SC";
   font-weight: bold;
-  
-  margin-bottom: 2vh;
+  margin-bottom: 10vw;
 }
 
 .quemsomosimg {
-  height: 17.5vh;
+  height: 30vw;
 }
 
 .quemsomostext {
@@ -124,6 +124,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-top: 15vw;
 }
 
 .quemsomossocialmedia a {
@@ -139,12 +140,11 @@ body {
   cursor: pointer;
 }
 
-
 /*estilos do footer*/
 footer {
   background-color: #000;
   text-align: center;
-  padding: 2vh 0;
+  padding: 2vw 0;
 }
 
 .footercontent {
@@ -156,7 +156,7 @@ footer {
 
 .footerlogo {
   display: inline-block;
-  margin-right: 3vw;;
+  margin-right: 3vw;
 }
 
 .footertext {
