@@ -3,7 +3,7 @@
 /*estilos do main - section banner*/
 
 .banner1 {
-  background-image: url("../../assets/calcbanner-background.jpg");
+  background-image: url("../assets/img/calcbanner-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -18,7 +18,7 @@
 }
 
 .banner2 {
-  background-image: url("../../assets/dev-background.jpg");
+  background-image: url("../assets/img/dev-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -33,7 +33,7 @@
 }
 
 .banner3 {
-  background-image: url("../../assets/chalkboard-background.jpg");
+  background-image: url("../assets/img/chalkboard-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -47,7 +47,7 @@
   margin-bottom: 2vw;
 }
 .banner4 {
-  background-image: url("../../assets/producao-background.jpg");
+  background-image: url("../assets/img/producao-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -62,7 +62,7 @@
 }
 
 .banner5 {
-  background-image: url("../../assets/prodmus-background.jpg");
+  background-image: url("../assets/img/prodmus-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -77,7 +77,7 @@
 }
 
 .banner6 {
-  background-image: url("../../assets/edit-background.jpg");
+  background-image: url("../assets/img/edit-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -126,7 +126,7 @@
   /*estilos do main - section banner*/
 
   .banner1 {
-    background-image: url("../../assets/calcbanner-background.jpg");
+    background-image: url("../assets/img/calcbanner-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -141,7 +141,7 @@
   }
 
   .banner2 {
-    background-image: url("../../assets/dev-background.jpg");
+    background-image: url("../assets/img/dev-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -156,7 +156,7 @@
   }
 
   .banner3 {
-    background-image: url("../../assets/chalkboard-background.jpg");
+    background-image: url("../assets/img/chalkboard-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -170,7 +170,7 @@
     margin-bottom: 2vw;
   }
   .banner4 {
-    background-image: url("../../assets/producao-background.jpg");
+    background-image: url("../assets/img/producao-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -185,7 +185,7 @@
   }
 
   .banner5 {
-    background-image: url("../../assets/prodmus-background.jpg");
+    background-image: url("../assets/img/prodmus-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -200,7 +200,7 @@
   }
 
   .banner6 {
-    background-image: url("../../assets/edit-background.jpg");
+    background-image: url("../assets/img/edit-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
