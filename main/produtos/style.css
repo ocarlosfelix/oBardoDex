@@ -118,3 +118,127 @@
   font-family: "Amatic SC";
   margin: 3vw;
 }
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1024px) {
+  /*estilos do main - section banner*/
+
+  .banner1 {
+    background-image: url("../../assets/calcbanner-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2vw 0 2vw 0;
+  }
+
+  .banner2 {
+    background-image: url("../../assets/dev-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2vw;
+  }
+
+  .banner3 {
+    background-image: url("../../assets/chalkboard-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2vw;
+  }
+  .banner4 {
+    background-image: url("../../assets/producao-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2vw;
+  }
+
+  .banner5 {
+    background-image: url("../../assets/prodmus-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2vw;
+  }
+
+  .banner6 {
+    background-image: url("../../assets/edit-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2vw;
+  }
+
+  .produtolink {
+    text-decoration: none;
+  }
+
+  .bannertitle {
+    font-size: 6rem;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    font-family: "Amatic SC";
+    font-weight: bold;
+  }
+
+  .bannertitle:hover {
+    color: orange;
+    cursor: pointer;
+  }
+
+  .bannertext {
+    display: flex;
+    font-size: 2rem;
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+    font-family: "Amatic SC";
+    margin: 3vw;
+  }
+}
