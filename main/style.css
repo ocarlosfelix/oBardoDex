@@ -2,7 +2,7 @@
 
 /*estilos do main - section banner*/
 .banner {
-  background-image: url("../../assets/agreg-background.jpg");
+  background-image: url("../assets/agreg-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -106,7 +106,7 @@
 
 /*estilos do main - form contato*/
 .formbackground {
-  background-image: url("../../assets/contact-background.jpg");
+  background-image: url("../assets/contact-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -202,7 +202,7 @@
 @media screen and (min-width: 1024px) {
   /*estilos do main - section banner*/
   .banner {
-    background-image: url("../../assets/agreg-background.jpg");
+    background-image: url("../assets/agreg-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -304,7 +304,7 @@
 
   /*estilos do main - form contato*/
   .formbackground {
-    background-image: url("../../assets/contact-background.jpg");
+    background-image: url("../assets/contact-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
