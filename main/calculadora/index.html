@@ -26,7 +26,7 @@
     <link
       rel="shortcut icon"
       type="imagex/png"
-      href="../../assets/bardoicon.ico"
+      href="../../assets/icons/bardoicon.ico"
     />
     <script
       async
@@ -62,6 +62,13 @@
     </header>
 
     <main class="calculadoracontainer">
+      <section class="banner">
+        <h2 class="bannertitle">
+          Calculadora <br />
+          de Cachê
+        </h2>
+      </section>
+
       <form onsubmit="valorfinal(event)">
         <div class="columnform">
           <div class="coluna">
@@ -154,12 +161,7 @@
             <div id="transporteunchecked">
               <h3 class="formlabel">Preço do transporte contratado</h3>
               <div class="item">
-                <input
-                  class="input"
-                  id="custouber"
-                  type="number"
-                  value="0"
-                />
+                <input class="input" id="custouber" type="number" value="0" />
               </div>
             </div>
           </div>
@@ -185,24 +187,36 @@
             <div id="cacheunchecked">
               <div class="cacheporartista">
                 <div class="cacheporartistarow">
-                  <h3 class="formtag">Cachê <br> artista 01:</h3>
+                  <h3 class="formtag">
+                    Cachê <br />
+                    artista 01:
+                  </h3>
                   <div class="item">
                     <input class="input" id="cacheartista1" value="0" />
                   </div>
 
-                  <h3 class="formtag">Cachê <br> artista 02:</h3>
+                  <h3 class="formtag">
+                    Cachê <br />
+                    artista 02:
+                  </h3>
                   <div class="item">
                     <input class="input" id="cacheartista2" value="0" />
                   </div>
                 </div>
 
                 <div class="cacheporartistarow">
-                  <h3 class="formtag">Cachê <br> artista 03:</h3>
+                  <h3 class="formtag">
+                    Cachê <br />
+                    artista 03:
+                  </h3>
                   <div class="item">
                     <input class="input" id="cacheartista3" value="0" />
                   </div>
 
-                  <h3 class="formtag">Cachê <br> artista 04:</h3>
+                  <h3 class="formtag">
+                    Cachê <br />
+                    artista 04:
+                  </h3>
                   <div class="item">
                     <input class="input" id="cacheartista4" value="0" />
                   </div>
@@ -210,12 +224,32 @@
               </div>
             </div>
           </div>
-        </div>     
+        </div>
 
         <div class="btncontainer">
           <div class="submitarea">
             <button id="btn" type="submit" class="btn">Calcular</button>
           </div>
+        </div>
+
+        <div class="anuncio">
+          <script
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5634002037306796"
+            crossorigin="anonymous"
+          ></script>
+          <!-- CalculadoraHorizontalADS -->
+          <ins
+            class="adsbygoogle"
+            style="display: block"
+            data-ad-client="ca-pub-5634002037306796"
+            data-ad-slot="2802039536"
+            data-ad-format="auto"
+            data-full-width-responsive="true"
+          ></ins>
+          <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
         </div>
 
         <div class="resultado">
@@ -224,26 +258,6 @@
           </h3>
         </div>
       </form>
-
-      <div class="anuncio">
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5634002037306796"
-          crossorigin="anonymous"
-        ></script>
-        <!-- CalculadoraHorizontalADS -->
-        <ins
-          class="adsbygoogle"
-          style="display: block"
-          data-ad-client="ca-pub-5634002037306796"
-          data-ad-slot="2802039536"
-          data-ad-format="auto"
-          data-full-width-responsive="true"
-        ></ins>
-        <script>
-          (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-      </div>
     </main>
 
     <footer>
