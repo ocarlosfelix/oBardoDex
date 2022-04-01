@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-  max-width: 100%;
+  max-width: 100vw;
 }
 .bg {
   background-image: url("https://img.freepik.com/fotos-gratis/papel-de-pergaminho-velho-papel-de-parede-de-textura-de-banner-horizontal_118047-9982.jpg?size=626&ext=jpg");
@@ -16,10 +16,10 @@ body {
   background-color: black;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  height: 10vh;
-  padding: 2vh 5vw;
+  height: 10vw;
+  padding: 8vw;
 }
 
 .headermenu ul {
@@ -49,8 +49,8 @@ body {
 }
 
 .logo {
-  max-height: 5vh;
-  margin-top: 1vh;
+  height: 10vw;
+  margin: 0.5vw;
 }
 
 /*estilos do main - section banner*/
@@ -60,12 +60,13 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  width: 100%;
-  height: 50vh;
+  width: 100vw;
+  height: 70vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
 }
 
 .bannertitle {
@@ -74,11 +75,12 @@ body {
   color: white;
   font-family: "Amatic SC";
   font-weight: bold;
+  margin-top: 5vw;
 }
 
 .bannertext {
   display: flex;
-  font-size: 4rem;
+  font-size: 3rem;
   text-justify: center;
   justify-content: center;
   color: white;
@@ -88,13 +90,12 @@ body {
 
 /*estilos do main - section parceiros*/
 .parceiros {
-  width: 100%;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0;
-  padding: 3% 0;
+  padding: 3vh 0;
 }
 
 .parceirostitle {
@@ -116,7 +117,7 @@ body {
 .logo-parceiros {
   display: flex;
   width: 5vh;
-  padding: 2vh 5vh;
+  padding: 6vw 10vw;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -135,22 +136,22 @@ body {
 
 .logos {
   margin: 1vh 0 0 0;
-  max-width: 5vh;
-  max-height: 5vh;
-  border-radius: 5vh;
+  width: 10vw;
+  height: 10vw;
+  border-radius: 10vw;
 }
 
 .logos:hover {
   margin: 1vh 0 0 0;
-  max-width: 5.5vh;
-  max-height: 5.5vh;
-  border-radius: 5.5vh;
+  width: 12vw;
+  height: 12vw;
+  border-radius: 12vw;
   cursor: pointer;
 }
 
 .parceirostext {
   font-size: 2rem;
-  text-justify: center;
+  text-align: center;
   justify-content: center;
   color: #000;
   font-family: "Amatic SC";
@@ -173,12 +174,12 @@ body {
 }
 
 .formtitle {
-  font-size: 6vh;
+  font-size: 10vw;
   justify-content: center;
   color: white;
   font-family: "Amatic SC";
   font-weight: bold;
-  margin-bottom: 15px;
+  margin-bottom: 1.5vh;
 }
 
 .item {
@@ -189,7 +190,7 @@ body {
 .formtag {
   display: flex;
   justify-content: center;
-  font-size: 30px;
+  font-size: 3rem;
   color: #000;
   font-family: "Amatic SC", cursive;
 }
@@ -213,12 +214,14 @@ body {
   height: 2vh;
   width: auto;
   padding: 1vw;
+  background-color: khaki;
 }
 
 .textarea {
   border-style: none;
   border-radius: 0.5vh;
   padding: 1vw;
+  background-color: khaki;
 }
 
 .btncontato {
@@ -227,7 +230,7 @@ body {
   border-radius: 5px;
   font-size: 3rem;
   color: white;
-  margin: 10px 0 0 0;
+  margin: 1vh 0 0 0;
   transition: 0.1s;
   cursor: pointer;
   font-family: "Amatic SC";
@@ -238,7 +241,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: "Amatic SC";
-  font-size: 2vh;
+  font-size: 2rem;
   color: white;
   margin-bottom: 1vh;
 }
@@ -255,7 +258,7 @@ footer {
 }
 
 .footercontent {
-  margin: auto 0%;
+  margin: auto 0;
   display: flex;
   align-items: center;
   justify-content: space-around;
